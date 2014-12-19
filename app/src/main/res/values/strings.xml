@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IBMBlueMixAndroidClient</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear_text">Text Cleared !!!</string>
+    <string name="msg_updated">Text Pushed to IBM BlueMix !!!</string>
+    <string name="pull_succeeded">Data Retrieved from IBM BlueMix !!!</string>
+
+</resources>

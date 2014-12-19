@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "shastra.com.ibmbluemixandroidclient"
+        minSdkVersion 15
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Play services jar, uncomment below to utilize google play services
+    // compile 'com.google.android.gms:play-services:+'
+
+    // IBM cloud jars (Uncomment 2 lines below for push etc)
+    // compile 'com.ibm.mobile.services:ibmpush:1.+'
+    // compile 'com.ibm.mobile.services:ibmcloudcode:1.+'
+    compile 'com.ibm.mobile.services:ibmdata:1.+'
+    compile 'com.ibm.mobile.services:ibmbluemix:1.+'
+    compile 'com.ibm.mobile.services:ibmfilesync:1.+'
+
+
+    // Add another custom maven dependency here
+
+    // *or*
+
+    // Uncomment below to add any additional dependencies to your custom project by dropping them into the 'libs' directory
+    // compile fileTree(dir: 'libs', include: '*.jar')
+}
